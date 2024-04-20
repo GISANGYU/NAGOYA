@@ -228,7 +228,9 @@ h2 {
     margin: 0px auto;
     margin-bottom: 20px;
     box-shadow: 0px 0px 10px rgba(128, 128, 128, 0.474);
+    padding-top: 5px;
 }
+
 
 .c_show p {
     font-family: 'Pretendard-Regular';
@@ -250,8 +252,51 @@ h2 {
     border: 1px solid black;
 }
 
+
+
+.small_tag {
+    font-size: 14px;
+    font-family: 'Pretendard-Regular';
+    color: rgb(34, 68, 255);
+    letter-spacing: -0.5px;
+    text-decoration: underline;
+}
+
+
+
 /* map */
 .map {
     display: block;
     margin: 0px auto;
+}
+
+
+/*  */
+
+.show_wrap img {
+    width: 95%;
+    margin: 0px auto;
+    display: block;
+}
+
+.small_sub {
+    font-size: 12px;
+    font-family: 'Pretendard-Regular';
+    margin-left: 18px;
+}
+
+.gray {
+    color: gray;
+
+    line-height: 20px;
+}
+
+
+
+.img_flex_3 {
+    display: flex;
+}
+
+.img_flex_3 img {
+    width: 45%;
 }
