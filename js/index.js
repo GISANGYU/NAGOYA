@@ -20,14 +20,30 @@ $(document).ready(function () {
             $(".background").css("display", "block");
         }
     });
-
+    let u
     $(".c_header").click(function () {
         // 클릭한 헤더의 인덱스를 가져옵니다.
         var index = $(this).index() / 2;
-        console.log(index)
+
+
         // 클릭한 헤더의 다음 요소인 쇼를 토글합니다.
         $(".c_show").eq(index).toggle();
+        // 클릭한 헤더의 다음 요소인 show_button 아이콘을 토글합니다.
+        $(this).find(".show_button").text(function (_, text) {
+            return text === "▼" ? "▲" : "▼";
+        });
+
     });
+
+    setTimeout(function () {
+        for (let i = 0; i < 5; i++) {
+            setTimeout(() => {
+                $(".animation_letter").eq(i).css("display", "inline-block")
+            }, i * 200);
+
+        }
+    }, 500)
+
 
 
 
